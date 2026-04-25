@@ -1,0 +1,95 @@
+// Copyright 2025 ETH Zurich and University of Bologna.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+//
+// Rendered from experiments/multicast/roi/tree.json.tpl for n_rows=4.
+// Use with: make visual-trace ROI_SPEC=roi_tree_n4.json SIM_DIR=<dir>
+[
+    {
+        // Transfer from memory tile to cluster 0
+        "thread": "hart_9",
+        "roi": [
+            {"idx": 14, "label": "level 0"},
+
+            // Transfer from cluster 0 to cluster 8
+            {"idx": 16, "label": "level 1"},
+
+            // Transfer from cluster 0 to cluster 4
+            {"idx": 18, "label": "level 2"},
+
+            // Transfer from cluster 0 to cluster 2
+            {"idx": 20, "label": "level 3"},
+
+            // Transfer from cluster 0 to cluster 1
+            {"idx": 22, "label": "level 4"},
+        ]
+    },
+
+    {
+        "thread": "hart_81",
+        "roi": [
+            // Transfer from cluster 8 to cluster 12
+            {"idx": 10, "label": "level 2"},
+
+            // Transfer from cluster 8 to cluster 10
+            {"idx": 12, "label": "level 3"},
+
+            // Transfer from cluster 8 to cluster 9
+            {"idx": 14, "label": "level 4"}
+        ]
+    },
+
+    {
+        "thread": "hart_45",
+        "roi": [
+            // Transfer from cluster 4 to cluster 6
+            {"idx": 8, "label": "level 3"},
+
+            // Transfer from cluster 4 to cluster 5
+            {"idx": 10, "label": "level 4"},
+        ]
+    },
+
+    {
+        "thread": "hart_117",
+        "roi": [
+            // Transfer from cluster 12 to cluster 14
+            {"idx": 8, "label": "level 3"},
+
+            // Transfer from cluster 12 to cluster 13
+            {"idx": 10, "label": "level 4"},
+        ]
+    },
+
+    {
+        "thread": "hart_27",
+        "roi": [
+            // Transfer from cluster 2 to cluster 3
+            {"idx": 6, "label": "level 4"},
+        ]
+    },
+
+    {
+        "thread": "hart_63",
+        "roi": [
+            // Transfer from cluster 6 to cluster 7
+            {"idx": 6, "label": "level 4"}
+        ]
+    },
+
+    {
+        "thread": "hart_99",
+        "roi": [
+            // Transfer from cluster 10 to cluster 11
+            {"idx": 6, "label": "level 4"},
+        ]
+    },
+
+    {
+        "thread": "hart_135",
+        "roi": [
+            // Transfer from cluster 14 to cluster 15
+            {"idx": 6, "label": "level 4"},
+        ]
+    },
+]
