@@ -14,7 +14,7 @@ HW_IMPLS = ['mp', 'pv', 'cb3', 'cb2']
 
 LABELS = {
     'mp':  'Multiplane',
-    'pv':  'PreemptValid',
+    'pv':  'Preemptive',
     'cb3': 'CreditBased - 3 input buffers',
     'cb2': 'CreditBased - 2 input buffers',
 }
